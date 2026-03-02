@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamil POP Investment Limited - Letterhead</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            background: white;
+            padding: 20px;
+        }
+        
+        .page {
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: white;
+            margin-bottom: 20px;
+        }
+        
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            padding: 20px;
+            margin: 0px 25px;
+            align-items: stretch; /* Makes sidebar match main-content height */
+        }
+        
+        .sidebar {
+            width: 180px;
+            padding-right: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .portfolio-image {
+            width: 100%;
+            height: 110px;
+            margin-bottom: 1px;
+            border-radius: 5px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            border: 3px solid #2e3a87;
+            border-radius: 20px;
+        }
+        
+        .content-area {
+            height: 100%;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+            outline: none;
+        }
+        
+        .content-area:empty:before {
+            content: 'Click here to start typing...';
+            color: #999;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #2e3a87;
+            font-size: 13px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .social-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .reference-line {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* adjust spacing */
+            font-style: italic;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <img src="./header_image.jpg" alt="Jamil POP Investment Limited Header">
+        </div>
+        <div class="reference-line">
+            <span>Our Ref........................................</span>
+            <span>Your Ref.........................................</span>
+            <span>Date..........................................</span>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="sidebar">
+                <img src="./sidebar/1.jpeg" class="portfolio-image">
+                <img src="./sidebar/2.jpeg" class="portfolio-image">
+                <img src="./sidebar/3.jpeg" class="portfolio-image">
+                <img src="./sidebar/4.jpeg" class="portfolio-image">
+                <img src="./sidebar/5.jpeg" class="portfolio-image">
+                <img src="./sidebar/6.jpeg" class="portfolio-image">
+            </div>
+            
+            <div class="main-content">
+                <div class="content-area" contenteditable="true"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="social-links">
+                <div class="social-item">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="#2e3a87">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>www.facebook/jamilpopinvestmentlimited.com</span>
+                </div>
+                <div class="social-item">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#833ab4"/>
+                                <stop offset="50%" style="stop-color:#fd1d1d"/>
+                                <stop offset="100%" style="stop-color:#fcb045"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#instagram-gradient)"/>
+                        <circle cx="12" cy="12" r="4" fill="none" stroke="white" stroke-width="2"/>
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                    </svg>
+                    <span>Jamil POP Investment Limited</span>
+                </div>
+                <div class="social-item">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#000000"/>
+                    </svg>
+                    <span>@Jamil POP Investment Limited</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
